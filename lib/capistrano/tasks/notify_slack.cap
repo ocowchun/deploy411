@@ -1,0 +1,12 @@
+namespace :deploy do
+  desc "Runs test before deploying, can't deploy unless they pass"
+  task :notify_slack do
+   on roles(:app) do
+     within release_path do
+      with rails_env: fetch(:rails_env) do
+        execute :rake, 'slack:notify'
+      end
+    end
+  end
+end
+end

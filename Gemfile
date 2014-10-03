@@ -33,6 +33,8 @@ gem 'figaro'
 
 # Use unicorn as the app server
 gem 'unicorn'
+gem 'slack-notifier'
+
 
 # Use Capistrano for deployment
 group :development do

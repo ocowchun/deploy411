@@ -5,7 +5,7 @@ namespace :utils do
     on roles(:app) do
       rev    = capture "cat #{ current_path }/REVISION"
       puts "  * REVISION: #{ rev }"    if rev
-      rake "service:notify REVISION=#{rev}" 
+      rake "slack:notify REVISION=#{rev}" 
     end
   end
 

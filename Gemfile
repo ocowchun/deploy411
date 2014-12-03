@@ -34,7 +34,8 @@ gem 'figaro'
 # Use unicorn as the app server
 gem 'unicorn'
 gem 'slack-notifier'
-
+gem 'lograge'
+gem 'act-fluent-logger-rails'
 
 # Use Capistrano for deployment
 group :development do

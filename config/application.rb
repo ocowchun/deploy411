@@ -20,9 +20,9 @@ module Deploy411
         # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
         # config.i18n.default_locale = :de
         config.log_level = :info
-        config.logger = ActFluentLoggerRails::Logger.new
+        # config.logger = ActFluentLoggerRails::Logger.new
         config.lograge.enabled = true
-        config.lograge.formatter = Lograge::Formatters::Json.new
-        
+        # config.lograge.formatter = Lograge::Formatters::Json.new
+         config.lograge.formatter = Lograge::Formatters::Logstash.new
     end
 end

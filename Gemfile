@@ -36,6 +36,7 @@ gem 'unicorn'
 gem 'slack-notifier'
 gem 'lograge'
 gem 'act-fluent-logger-rails'
+gem "logstash-event"
 
 # Use Capistrano for deployment
 group :development do

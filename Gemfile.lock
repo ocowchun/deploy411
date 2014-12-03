@@ -74,6 +74,7 @@ GEM
       actionpack (>= 3)
       activesupport (>= 3)
       railties (>= 3)
+    logstash-event (1.2.02)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -165,6 +166,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   lograge
+  logstash-event
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

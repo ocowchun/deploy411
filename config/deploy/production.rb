@@ -11,7 +11,8 @@ set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 set :password, ask('Server password',nil)
 
 # specify server DNS name, user & roles
-server '192.168.33.33', user: 'vagrant', password: fetch(:password), roles: %w{web app db}, primary: true
+# server '192.168.33.33', user: 'vagrant', password: fetch(:password), roles: %w{web app db}, primary: true
+server '128.199.173.18', user: 'root', roles: %w{web app db}, primary: true
 
 set :deploy_to, "/home/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
 

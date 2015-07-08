@@ -4,7 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 gem 'mysql2'
 
 # Use SCSS for stylesheets
@@ -42,11 +41,13 @@ gem "logstash-event"
 gem 'rails_12factor', group: :production
 # Use Capistrano for deployment
 group :development do
-	gem 'capistrano-rails'
-	gem 'capistrano'
-	gem 'capistrano-bundler'
-	gem 'capistrano-rbenv'
+  gem 'sqlite3'
+  gem 'capistrano-rails'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rbenv'
 end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 ruby "2.2.0"
+-

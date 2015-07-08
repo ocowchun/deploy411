@@ -39,7 +39,7 @@ gem 'slack-notifier'
 gem 'lograge'
 gem 'act-fluent-logger-rails'
 gem "logstash-event"
-
+gem 'rails_12factor', group: :production
 # Use Capistrano for deployment
 group :development do
 	gem 'capistrano-rails'
@@ -49,3 +49,4 @@ group :development do
 end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+ruby "2.2.0"
